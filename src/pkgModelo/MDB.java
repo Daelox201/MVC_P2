@@ -12,7 +12,7 @@ public class MDB {
 	protected Conexion conexion;
 
         public MDB() {
-        conexion = new Conexion("com.mysql.cj.jdbc.Driver",  "jdbc:mysql://localhost:3306/bddatos?", "root","2315");//CAMBIAR BDCOSTOS POR EL NOMBRE DE SU BD
+            conexion = new Conexion("com.mysql.jdbc.Driver", "jdbc:mysql://sql3.freemysqlhosting.net/sql3473607", "sql3473607", "lHkLJDPquY");//CAMBIAR BDCOSTOS POR EL NOMBRE DE SU BD
 	
         //conexion = new Conexion("com.mysql.jdbc.Driver",  "jdbc:mysql://localhost:3306/bdcostos?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&useTimezone=true&serverTimezone=GMT&useSSL=false", "root","administrador");//ESTA CADENA LARGA SE USA PARA MAC Y PARA ALGUNAS INSTALACIONES RECIENTES DE MYSQL
 	
@@ -133,7 +133,7 @@ public class MDB {
 			}
 			if(!dataSet.first()){
 				temp = new ArrayList<String>();
-				temp.add("No se encontro ninguna coincidencia. Verifique los datos o intente con otro tipo de busqueda.");
+				temp.add("No se encontró ninguna coincidencia. Verifique los datos o intente con otro tipo de búsqueda.");
 				datos.add(temp);
 			}
 		}

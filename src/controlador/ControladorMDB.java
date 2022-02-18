@@ -35,7 +35,7 @@ public class ControladorMDB implements ActionListener {
         if (e.getSource() == _view.cmdAlta) { //Si el botón presionado fue el de alta
 
             //leyenda = _model.registrarAlta("TbUsuarios", " null, ' " + _view.txtNombre.getText() + " ',' " + _view.txtNombre.getText() + " ', " + );
-            leyenda = _model.registrarAlta("tbUsuarios", "null, '" + _view.txtNombre.getText() + "','" + _view.txtApPaterno.getText()  + "', " + _view.txtContrasena.getText());
+            leyenda = _model.registrarAlta("tbusuarios", "null, '" + _view.txtNombre.getText() + "','" + _view.txtApPaterno.getText()  +" "+_view.txtApMaterno.getText()+ "', " + _view.txtContrasena.getText());
             //Se puede usar una variable o el control, lo ideal es que se pudiera llamar una función de
             // validación aquí sobre los datos obteindos de las cajas de texto
             JOptionPane.showMessageDialog(null, leyenda);//Se manda mensaje con elresultado de la

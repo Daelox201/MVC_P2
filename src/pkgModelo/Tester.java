@@ -15,7 +15,7 @@ public class Tester {
 		ArrayList<String> renglonObtenido = new ArrayList<String>();
 		String leyenda;
                 //insertar
-                leyenda= administradorBD.registrarAlta("tbUsuarios", "null, 'Mayra','González',1234");
+                leyenda= administradorBD.registrarAlta("tbusuarios","null,'Pepe', ' González Gutierres',123");
 		System.out.println(leyenda);
                 
                 //modificar
@@ -26,9 +26,9 @@ public class Tester {
          //  leyenda = administradorBD.borrarRegistro("TbEquipo", "id = 6");
            //   System.out.println(leyenda);
 		
-                /*consulta
-		datosObtenidos = administradorBD.consultarDatos("tbUsuarios", "id , nombre,apPaterno, psw", "id=1");
-                  System.out.println(leyenda);
+                //consulta
+//		datosObtenidos = administradorBD.consultarDatos("tbuSsuarios", "id , nombre,apPaterno, psw", "id=1");
+//                  System.out.println(leyenda);
 		for(i=0;i<datosObtenidos.size();i++)
 		{
                     renglonObtenido = datosObtenidos.get(i);
@@ -37,6 +37,5 @@ public class Tester {
                     }
                     System.out.println();
 		}
-                */
         }
 }
